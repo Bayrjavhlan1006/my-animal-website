@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Миний дуртай амьтан - Ирвэс</title>
+
+  <style>
+    /* 1. Хуудасны ерөнхий загвар */
+    body {
+      margin: 0;
+      padding: 30px 15px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #dff4ff, #f9e6f1);
+      color: #243650;
+    }
+
+    /* 2. Гол цагаан карт */
+    .card {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(30, 60, 100, 0.15);
+    }
+
+    /* 3. Жижиг шар шошго */
+    .badge {
+      background: #fff0c6;
+      color: #80571a;
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    /* 4. Гарчиг */
+    h1 {
+      font-size: 42px;
+      color: #18355b;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #77869a;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* 5. Амьтны зураг */
+    .animal-image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 18px;
+      border: 5px solid #fff0c6;
+      box-sizing: border-box;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    /* 6. Мэдээллийн өнгөт картууд */
+    .fact {
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 12px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .yellow { background: #fff1d3; }
+    .green  { background: #e5f5eb; }
+    .blue   { background: #e8f0ff; }
+    .pink   { background: #fce8f0; }
+
+    /* 7. Товчлуур */
+    button {
+      background: #234b83;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 22px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 15px 0;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #3469ad;
+      transform: translateY(-3px);
+    }
+
+    /* 8. Зохиогч */
+    footer {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px dashed #d6e1ec;
+      color: #718096;
+      font-size: 13px;
+    }
+
+    /* 9. Гар утасны дэлгэц */
+    @media (max-width: 480px) {
+      .card { padding: 18px; }
+      h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="card">
+
+    <div class="badge">🐾 МИНИЙ ДУРТАЙ АМЬТАН</div>
+
+    <h1>Ирвэс 🐆</h1>
+
+    <p class="subtitle">🏔️ Өндөр уулсын нууцлаг амьтан</p>
+
+    <!-- Зургийг өөрийн файлын нэрээр солино -->
+    <img
+      class="animal-image"
+      src="irves.jpg"
+      alt="Цоохор ирвэс"
+    >
+
+    <section>
+      <p class="fact yellow">
+        💛 Миний дуртай амьтан бол ирвэс.
+      </p>
+
+      <p class="fact green">
+        🏔️ Энэ амьтан өндөр ууланд амьдардаг.
+      </p>
+
+      <p class="fact blue">
+        🍖 Ирвэс мах иддэг.
+      </p>
+
+      <p class="fact pink">
+        ⚡ Ирвэс хурдан хөдөлдөг.
+      </p>
+    </section>
+
+    <button onclick="alert('Ирвэс бол гайхалтай амьтан! 🐾')">
+      🐾 Намайг дар!
+    </button>
+
+    <footer>
+      <strong>Зохиосон: Баяржавхлан</strong>
+      <p>Зургийн эх сурвалж: [зохиогч, лиценз]</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
